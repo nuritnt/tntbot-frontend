@@ -1,24 +1,17 @@
-# README
+# This is the list interface for my master21 bot project.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+-- UNDER CONSTRUCTION --
 
-Things you may want to cover:
+https://tntbot-list.herokuapp.com/
 
-* Ruby version
+## The list has
+* title
+* url
+* posted data
+* channel id
+* user id
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## To do
+* format timestamp
+* fix channel id
+* fix user id
