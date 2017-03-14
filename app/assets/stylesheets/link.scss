@@ -8,7 +8,7 @@ body {
   // display: flex;
   justify-content: center;
   margin: 0;
-  font: 14px 'Courier New', serif;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   letter-spacing:1px;
   background: linear-gradient(130deg,#E9AFA3 35%,#99B2DD 100%) no-repeat center center fixed;
 }
@@ -21,8 +21,8 @@ section{
   width:950px;
   // max-height: relative;
   color:hsla(274, 95%, 95%, .7);
-  background:hsla(274, 95%, 75%, .07);
-  filter: drop-shadow(26px 26px 20px hsla(0,0%,0%,0.5));
+  background:hsla(274, 95%, 75%, .17);
+  filter: drop-shadow(26px 26px 20px hsla(0,0%,0%,0.3));
   box-shadow:-4vh -6vh 16vh -6vh hsla(0,0%,0%,0.2),
     -4vh 6vh 16vh -6vh hsla(0,0%,0%,0.15);
   & header {
@@ -30,7 +30,8 @@ section{
     background:hsla(0,0%,0%,.12);
     margin: 0 auto 0 auto;
       & h4{
-      color: #D9DBE2;
+      font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+      color: #153159;
       height:3rem;
       margin:1rem 0 1rem 0;
       padding:0 0.5rem;
@@ -41,28 +42,34 @@ section{
         & span{
         padding:1.2rem;
            &.c{
-            font: 'Courier New', serif;
             padding:.5rem;
           }
         }
      }
      & input[type="search"]{
-        font: 14px 'Courier New', serif;
+        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
         margin:0 .5rem;
         padding: .5rem;
         width:23%;
-        color:hsla(274, 95%, 95%, .8);
+        color: #153159;
         background:transparent;
         border:none;
         border-bottom:1px solid hsla(274, 90%, 80%, .9);
         font-size:1.15rem;
         transition:translateX 6s ease-in;
-        &:focus{
-          color:hsla(274, 95%, 95%, .8);
+        box-shadow: none;
+
+        &:placeholder {
+          color: #153159 !important;
+        }
+
+        &:focus, &:active {
+          box-shadow: none;
+          border:none;
+          color: #153159;
           background:transparent;
           outline-color: transparent;
-          outline-style: none;
-          outline:none;
+          outline: none;
           border-bottom:1px solid hsla(274, 90%, 80%, .9);
 	   	    &::-webkit-input-placeholder{
             transform: translateX(70%);
@@ -89,19 +96,19 @@ section{
           transition: ease-in 0.3s;
           transform-origin: 0 50%;
         }
-        &:-moz-placeholder{color:hsla(274, 95%, 90%, .8);
+        &:-moz-placeholder{color: #153159;
           transition: ease-in 0.3s;
           transform-origin: 0 50%;
         }
-        &::-moz-placeholder{color:hsla(274, 95%, 90%, .8);
+        &::-moz-placeholder{color: #153159;
           transition: ease-in 0.3s;
           transform-origin: 0 50%;
         }
-        &:-ms-input-placeholder{color:hsla(274, 95%, 90%, .8);
+        &:-ms-input-placeholder{color: #153159;
           transition: ease-in 0.3s;
           transform-origin: 0 50%;
         }
-        &::-ms-input-placeholder{color:hsla(274, 95%, 90%, .8);
+        &::-ms-input-placeholder{color: #153159;
           transition: ease-in 0.3s;
           transform-origin: 0 50%;
         }
@@ -115,7 +122,7 @@ section{
       width: 100%;
       padding: 1rem 0;
       line-height:1.5rem;
-      filter: drop-shadow(26px 26px 20px hsla(0,0%,0%,0.5));
+
       list-style-type:none;
       text-align:left;
       & span{
@@ -131,14 +138,14 @@ section{
 }
 
 .title {
-  color: #1779ba;
+  color: #153159;
 }
 
 .user_id, .channel_id {
-  color: white;
+  color: #545C7C;
 }
 .timestamp {
-  color: #cecece;
+  color: #545C7C;
 }
 
 
