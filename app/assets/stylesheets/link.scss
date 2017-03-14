@@ -5,7 +5,7 @@ html { height: 100%; }
 body {
   width:100%;
   height:100%;
-  display: flex;
+  // display: flex;
   justify-content: center;
   margin: 0;
   font: 14px 'Courier New', serif;
@@ -14,12 +14,12 @@ body {
 }
 
 section{
-  align-self: top;
+  // align-self: top;
   margin:50px 0;
-  display:  block;
-  position: relative;
+  // display:  block;
+  // position: relative;
   width:950px;
-  max-height: relative;
+  // max-height: relative;
   color:hsla(274, 95%, 95%, .7);
   background:hsla(274, 95%, 75%, .07);
   filter: drop-shadow(26px 26px 20px hsla(0,0%,0%,0.5));
@@ -41,7 +41,7 @@ section{
         & span{
         padding:1.2rem;
            &.c{
-            font: 'Courier New', serif; 
+            font: 'Courier New', serif;
             padding:.5rem;
           }
         }
@@ -58,8 +58,12 @@ section{
         font-size:1.15rem;
         transition:translateX 6s ease-in;
         &:focus{
+          color:hsla(274, 95%, 95%, .8);
+          background:transparent;
+          outline-color: transparent;
+          outline-style: none;
           outline:none;
-          border:1px solid hsla(274, 90%, 80%, .5);
+          border-bottom:1px solid hsla(274, 90%, 80%, .9);
 	   	    &::-webkit-input-placeholder{
             transform: translateX(70%);
             opacity:0;
@@ -103,7 +107,8 @@ section{
         }
     }
   }
-  .filter{
+  .tnt-filter{
+    margin: 0;
     color: #D9DBE2;
     padding:0;
     & li{
@@ -123,4 +128,25 @@ section{
       }
     }
   }
+}
+
+.title {
+  color: #1779ba;
+}
+
+.user_id, .channel_id {
+  color: white;
+}
+.timestamp {
+  color: #cecece;
+}
+
+
+.hidden {
+  animation-duration: 0.2s;
+  animation-name: fadeOut;
+  opacity: 0;
+}
+.none {
+  display: none !important;
 }
