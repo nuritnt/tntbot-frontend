@@ -1,5 +1,5 @@
 <section class="row">
-  <div class="columns small-12">
+  <div class="columns small-12 small-centered">
     <header>
       <h4><span class ='c'>Master21's link collection</span></h4>
       <input type = 'search' placeholder="🔍 Search" autofocus class="js-filter-search-box">
@@ -7,21 +7,32 @@
   </div>
   <div class="columns small-12">
     <ul id="link-list" class="tnt-filter">
-    <% @links.each do |link| %>
-      <li class="js-filter-item" data-name="<%= link.search_attributes %>">
+      <% @links.each do |link| %>
+        <li class="js-filter-item" data-name="<%= link.search_attributes %>">
         <%= link_to link.url, target: "_BLANK" do %>
           <div class="row">
             <div class="columns small-12">
-              <span class='title'><%= link.title %></span><br>
-              <span class='user_id'>by @<%= link.user_id %></span>
-              <span class='channel_id'><%= link.channel_id %></span>
-              <span class='timestamp'><%= link.created_at.strftime('%F %T') %></span>
+              <div class="row">
+                <div class="columns small-12">
+                  <span class='title'><%= link.title %></span><br>
+                </div>
+              </div>
+              <div class="row">
+                <div class="columns small-12 large-4">
+                  <span class='user_id'>by @<%= link.user_id %></span>
+                </div>
+                <div class="columns small-12 large-4">
+                  <span class='channel_id'><%= link.channel_id %></span>
+                </div>
+                <div class="columns small-12 large-4">
+                  <span class='timestamp'><%= link.created_at.strftime('%F %T') %></span>
+                </div>
+              </div>
             </div>
           </div>
         <% end %>
-
-      </li>
-    <% end %>
+        </li>
+      <% end %>
     </ul>
   </div>
 </section>
