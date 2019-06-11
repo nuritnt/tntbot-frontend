@@ -1,6 +1,6 @@
 # This is the list interface for my master21 bot project.
 
--- UNDER CONSTRUCTION --
+-- THIS PROJECT IS A CONSTANT WIP --
 
 https://tntbot-list.herokuapp.com/
 
